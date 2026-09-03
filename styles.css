@@ -35,12 +35,10 @@ a {
 }
 
 .card-grid {
-  display: flex;
+  display: grid;
   gap: 24px;
-  flex-wrap: wrap;
-  flex-direction: row;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
-  flex: 2;
 }
 
 .card {
@@ -48,9 +46,7 @@ a {
   background: rgb(0, 0, 0);
   border: 2px solid #fdfdfd;
   padding: 20px;
-  flex-direction: column;
-  display: flex;
-  flex: 0.8;
+  border-radius: 8px;
 }
 
 .sidebar {
@@ -60,13 +56,10 @@ a {
   padding: 16px;
 }
 
-.sidebar h2 {
-  flex: 2;
-}
 
 
 @media (max-width: 800px) {
   .card-grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }

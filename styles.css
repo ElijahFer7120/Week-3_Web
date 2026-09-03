@@ -50,8 +50,20 @@ a {
   padding: 20px;
   flex-direction: column;
   display: flex;
-  flex: 3;
+  flex: 0.8;
 }
+
+.sidebar {
+  background: rgb(11, 0, 0);
+  border: 2px solid #d5ded8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.sidebar h2 {
+  flex: 2;
+}
+
 
 @media (max-width: 750px) {
   .card-grid {
